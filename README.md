@@ -1,5 +1,13 @@
 # portability-lint
 
+![Tests](https://github.com/rahmankhanjohn/portability-lint/actions/workflows/test.yml/badge.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)
+![Dependencies: 0](https://img.shields.io/badge/dependencies-0-brightgreen.svg)
+![Tests: 5](https://img.shields.io/badge/tests-5%20passing-brightgreen.svg)
+![GitHub stars](https://img.shields.io/github/stars/rahmankhanjohn/portability-lint?style=social)
+![Last commit](https://img.shields.io/github/last-commit/rahmankhanjohn/portability-lint)
+
 Find what would break if this moved to another cloud, before you promise anyone portability.
 
 Most teams believe they are portable because their code is in containers. Containers carry the runtime. They do not carry the storage backend, the IAM model, the managed database API, or the ingress controller that the platform happens to provide.
