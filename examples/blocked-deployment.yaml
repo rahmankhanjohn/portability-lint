@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blocked-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: blocked-app
+  template:
+    metadata:
+      labels:
+        app: blocked-app
+    spec:
+      nodeSelector:
+        topology.kubernetes.io/zone: us-east-1a
+      containers:
+      - name: app
+        image: 123456789.dkr.ecr.us-east-1.amazonaws.com/app:1.0
+        volumeMounts:
+        - name: ebs
+          mountPath: /data
+      volumes:
+      - name: ebs
+        awsElasticBlockStore:
+          volumeID: vol-12345678

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portable-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: portable-app
+  template:
+    metadata:
+      labels:
+        app: portable-app
+    spec:
+      containers:
+      - name: app
+        image: nginx:1.25
+        ports:
+        - containerPort: 80
