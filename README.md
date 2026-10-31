@@ -2,6 +2,7 @@
 
 ![Tests](https://github.com/rahmankhanjohn/portability-lint/actions/workflows/test.yml/badge.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![XERJ Corpus Hub contributor](https://hub.xerj.org/contributors/rahmankhanjohn/badge.svg)
 ![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)
 ![Dependencies: 0](https://img.shields.io/badge/dependencies-0-brightgreen.svg)
 ![Tests: 5](https://img.shields.io/badge/tests-5%20passing-brightgreen.svg)
@@ -16,6 +17,10 @@ This tool reads a tree and separates the two kinds of dependency.
 
 - **Blockers** — storage classes, cloud IAM resources, managed database APIs, cloud-specific kubelet settings. These move with the provider. A blocker means the second cloud is a rebuild, not a copy.
 - **Soft dependencies** — image registries, provider CLIs, SDK imports, zonal node selectors, object store URLs. Usually replaceable, but they cost engineer time.
+
+## Recognition
+
+Indexed on the [XERJ Corpus Hub](https://hub.xerj.org/contributors/rahmankhanjohn) - the open reference memory AI coding agents search before they write code.
 
 ## Requirements
 
